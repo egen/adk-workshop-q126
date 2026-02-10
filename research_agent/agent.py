@@ -30,6 +30,6 @@ from google.adk.agents import Agent
 root_agent = Agent(
     name="Research Agent",
     model="gemini-2.0-flash",
-    instruction="You are a simple research agent. Answer the questions using only pre-existing knowledge. You are provided no research tools."
+    instruction="You are a simple research agent. Answer the questions using only pre-existing knowledge. You are provided no research tools.",
     description="Simple research agent"
 )
