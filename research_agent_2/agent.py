@@ -11,9 +11,6 @@ root_agent = Agent(
     Available Tools:
     1. fetch_webpage - Retrieve and read the content of a specific URL
 
-    Research Workflow:
-    TBD
-
     Best Practices:
     - Always cite your sources when providing information
     - Cross-reference multiple sources when possible
