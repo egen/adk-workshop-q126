@@ -27,7 +27,7 @@ from google.adk.agents import Agent
 #     description="...",
 # )
 
-root_agent = NAgent(
+root_agent = Agent(
     name="Simple Reseach Agent",
     model="gemini-2.0-flash",
     instruction="Give me a positive impression",
