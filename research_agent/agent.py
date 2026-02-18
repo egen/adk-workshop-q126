@@ -14,6 +14,7 @@ root_agent = Agent(
     name= "simple_research_agent",
     model= "gemini-2.0-flash",
     instruction= "You are a helpful research assistant, your goal is to help user to find information and answer questions.",
+    description= "A simple research agent that can answer questions and find information for the user.",
 )
 # Exercise 1: Create a simple research agent
 # TODO: Define your root_agent here
