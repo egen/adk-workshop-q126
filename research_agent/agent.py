@@ -28,7 +28,7 @@ from google.adk.agents import Agent
 # )
 
 root_agent = Agent(
-    name="Simple Research Agent",
+    name="simple_research_agent",
     model="gemini-2.0-flash",
     instruction="""You are a helpful research assistant. Your goal is to help users find information and answer questions accurately and concisely.
     Remember: In this version you do not have access to tools or external resources. You can only use your internal knowledge to respond to user queries. Focus on providing clear and informative answers based on what you know.""",
