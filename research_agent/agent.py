@@ -42,5 +42,5 @@ root_agent = Agent(
     description="""
     This is a simple research agent that can answer questions and find information for the user.
     """,
-    tools=[google_search]
+    tools=[fetch_webpage]
 )
