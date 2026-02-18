@@ -48,3 +48,5 @@ sessions.db
 *.db
 
 sessions/
+
+docs/
