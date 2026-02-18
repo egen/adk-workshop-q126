@@ -40,7 +40,7 @@ pip install -r requirements.txt
 cp .env.example .env
 ```
 
-Edit `.env` and add your `GOOGLE_API_KEY`.
+Edit `.env` and add your `GOOGLE_API_KEY`. #
 
 ### 2. Run Locally
 
@@ -128,3 +128,4 @@ See [solutions/exercise_4/INSTRUCTIONS.md](solutions/exercise_4/INSTRUCTIONS.md)
 ## Need Help?
 
 Ask your workshop facilitator or check the `solutions/` folder for reference implementations.
+
