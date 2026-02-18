@@ -1,0 +1,79 @@
+{
+  "eval_set_id": "research_agent_eval",
+  "name": "Research Agent Evaluation Suite",
+  "description": "Test cases to verify the research orchestrator follows the correct workflow: research, verify, critique",
+  "eval_cases": [
+    {
+      "eval_id": "basic_research_query",
+      "conversation": [
+        {
+          "invocation_id": "turn_1",
+          "user_content": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Research the benefits of renewable energy and give me a brief report."
+              }
+            ]
+          },
+          "final_response": {
+            "role": "model",
+            "parts": [
+              {
+                "text": "A report on renewable energy benefits including environmental advantages like reduced carbon emissions, economic benefits such as job creation and energy cost savings, and energy security through reduced dependence on fossil fuels. The report should note which claims were verified and include a section on limitations or open questions."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "eval_id": "comparison_research",
+      "conversation": [
+        {
+          "invocation_id": "turn_1",
+          "user_content": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Compare electric vehicles vs hybrid vehicles. What are the pros and cons of each?"
+              }
+            ]
+          },
+          "final_response": {
+            "role": "model",
+            "parts": [
+              {
+                "text": "A comparison of electric and hybrid vehicles with verified claims about emissions, costs, and range. Should include fact-checked statistics and address limitations such as regional variation in electricity sources, evolving battery technology, and potential biases toward newer EV technology."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "eval_id": "trending_topic_research",
+      "conversation": [
+        {
+          "invocation_id": "turn_1",
+          "user_content": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "What are the health effects of intermittent fasting? Give me a research summary."
+              }
+            ]
+          },
+          "final_response": {
+            "role": "model",
+            "parts": [
+              {
+                "text": "A research summary on intermittent fasting health effects with verified claims about weight loss, metabolic health, and potential risks. Should clearly distinguish between well-established findings and preliminary research, note limitations such as study population biases, and flag open questions about long-term effects."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "criteria": {
+    "rubric_based_tool_use_quality_v1": {
+      "threshold": 0.8,
+      "rubrics": [
+        {
+          "rubric_id": "uses_researcher",
+          "rubric_content": {
+            "text_property": "The agent used the researcher tool to search for information on the topic."
+          },
+          "type": "TOOL_USE_QUALITY"
+        },
+        {
+          "rubric_id": "uses_fact_checker",
+          "rubric_content": {
+            "text_property": "The agent used the fact_checker tool to independently verify claims from the research."
+          },
+          "type": "TOOL_USE_QUALITY"
+        },
+        {
+          "rubric_id": "uses_critic",
+          "rubric_content": {
+            "text_property": "The agent used the critic tool to identify weaknesses, gaps, or biases in the findings."
+          },
+          "type": "TOOL_USE_QUALITY"
+        }
+      ]
+    },
+    "final_response_match_v2": {
+      "threshold": 0.7
+    }
+  }
+}
