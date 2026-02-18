@@ -12,7 +12,7 @@ Current Exercise: 1 (Simple Single Agent)
 from google.adk.agents import Agent
 
 root_agent = Agent(
-    name = "Extensive Research Agent",
+    name = "Extensive_Research_Agent",
     model = "gemini-2.0-flash",
     instruction = """
     You're a extensive research agent. Your task is to help users find answers to their questions.
