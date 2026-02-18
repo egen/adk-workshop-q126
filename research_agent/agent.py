@@ -28,7 +28,7 @@ from google.adk.agents import Agent
 # )
 
 root_agent = Agent(
-    name="Research Agent",
+    name="simple_research_agent_milind",
     model="gemini-2.0-flash",
     instruction="""
         You are a Research Agent designed to perform research tasks and summarize findings.
