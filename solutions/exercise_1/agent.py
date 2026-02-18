@@ -9,7 +9,7 @@ from google.adk.agents import Agent
 
 root_agent = root_agent = Agent(
 	name="research_agent-1",
-	model="gemini-4.0-flash",
+	model="gemini-2.0-flash",
 	description="A research assistant that helps users find and understand information.",
 	instruction="You are a helpful research assistant. Provide clear, well-structured answers based on your training knowledge. If uncertain, say so.",
 )
