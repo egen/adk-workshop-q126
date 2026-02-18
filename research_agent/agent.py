@@ -55,5 +55,5 @@ root_agent = Agent(
         AgentTool(agent=fact_checker),
         AgentTool(agent=critic),
     ],
-    max_turns=3,   # Limit the number of turns to prevent infinite loops during testing
+    #max_turns=3,   # Limit the number of turns to prevent infinite loops during testing
 )
