@@ -8,38 +8,38 @@ multi-agent system.
 
 Current Exercise: 1 (Simple Single Agent)
 """
-
 from google.adk.agents import Agent
-from google.adk.tools import google_search
-# Exercise 1: Create a simple research agent
-# TODO: Define your root_agent here
-#
-# Hints:
-# - Use the Agent class from google.adk.agents
-# - Set a descriptive name, model, instruction, and description
-# - The model should be "gemini-2.0-flash" for fast responses
-#
-# Example structure:
-# root_agent = Agent(
-#     name="...",
-#     model="...",
-#     instruction="...",
-#     description="...",
-# )
+from google.adk.tools.agent_tool import AgentTool
 
-# Exercise 2: Add Google Search Tool
+from .agents import researcher, fact_checker, critic
 
 root_agent = Agent(
-    name="simple_research_agent",
+    name="research_orchestrator",
     model="gemini-2.0-flash",
-    instruction="""
-You are a helpful research assistant.
+    description="A research orchestrator that coordinates a team of specialized agents.",
+    instruction="""You lead a research team. For every research request, follow this
+exact workflow:
 
-You can use the Google Search tool to find up-to-date information.
-Use the tool whenever needed to provide accurate and current answers.
+1. RESEARCH: Use researcher to gather broad information on the topic
+2. VERIFY: Use fact_checker to independently verify the key claims
+3. CRITIQUE: Use critic to challenge the findings and identify weaknesses or gaps
+4. REPORT: Write the final polished report yourself, incorporating verified facts
+   and addressing the critic's feedback
 
-Always clearly explain your findings.
-""",
-    description="A simple research agent with access to Google Search tool.",
-    tools=[google_search]  # Add the tool here
+Your final report must include:
+- A clear title
+- An executive summary (2-3 sentences)
+- Detailed findings organized by theme, noting which claims were verified
+- A section addressing limitations or open questions raised by the critic
+
+Writing Guidelines:
+- Use clear, professional language
+- Use markdown formatting for readability
+- Lead with the most important information
+- Be transparent about what was verified vs. what could not be confirmed""",
+    tools=[
+        AgentTool(agent=researcher),
+        AgentTool(agent=fact_checker),
+        AgentTool(agent=critic),
+    ],
 )
