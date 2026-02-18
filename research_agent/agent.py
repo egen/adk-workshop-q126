@@ -40,7 +40,7 @@ root_agent = Agent(
 
     You have now access to google search tool. So verify the information before presenting it to the uses
     """,
-    description="Simple research agent"
+    description="Simple research agent",
     tools = [
         google_search
     ]
