@@ -34,7 +34,7 @@ root_agent = Agent(
     description="A simple research agent that can answer questions about the topic.",
     instruction="""
     You are a simple research agent that can answer questions about the topic.
-    you have access to the google search tool to search the web for information.
+    you have access to the fetch_webpage tool to search the web for information.
     """,
-    tools=[google_search],
+    tools=[fetch_webpage],
 )
