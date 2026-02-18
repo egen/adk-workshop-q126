@@ -34,7 +34,8 @@ root_agent = Agent(
     instruction="""Help me write my research agent with following points to consideR:
 1. you are helpful research agent
 2. Your goal is to find accurate information and answer for questions
-3. Remmeber: all tools if you ghave but you dont"""
+3. Remmeber: Remember: In this version you do not have access to any tools and
+    all information must come from your training knowledge."""
 )
 
 root_agent = root_agent  # Replace this with your Agent definition
