@@ -15,8 +15,7 @@ from research_agent.tools import fetch_webpage
 
 root_agent = Agent(
     name="simple_research_agent",
-    # model="gemini-3-pro-preview",
-    model="gemini-3-flash-preview",
+    model="gemini-2.5-flash",
     instruction="""    
     You are a research assistant with the ability to fetch and read web pages.
 
