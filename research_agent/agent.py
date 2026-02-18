@@ -12,7 +12,6 @@ Current Exercise: 1 (Simple Single Agent)
 import requests
 from bs4 import BeautifulSoup
 from google.adk.agents import Agent
-from google.adk.tools import google_search_tool
 
 # Exercise 1: Create a simple research agent
 # TODO: Define your root_agent here
