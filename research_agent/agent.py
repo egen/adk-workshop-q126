@@ -31,9 +31,11 @@ from google.adk.agents import Agent
 
 root_agent = Agent(
     name="Simple_research_agent",
-    model="gemini-2.0-flash",
+    model="gemini-3-pro-preview",
     instruction="""
     You are a helpful research assistant. Your goal is to help user's find information and answer questions.
+
+    Remember: Do not use any tools or external resources. Just use your knowledge to answer the user's questions.
     """,
     description="""
     This is a simple research agent that can answer questions and find information for the user.
