@@ -33,5 +33,9 @@ root_agent = Agent(
     instruction="""
     You are a helpful research assistant. Your goal is to help users
     find information and answer question.
-    """
+
+    Remember: In this version you do not have access to any tools and 
+    all information should come from your training knowledge.
+    """,
+    description="Simple research agent"
 )
