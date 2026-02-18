@@ -1,0 +1,10 @@
+# Google AI API Key (for local development)
+# Get your key at: https://aistudio.google.com/apikey
+GOOGLE_API_KEY=your-api-key-here
+
+# Set to TRUE to use Vertex AI instead of Google AI API
+GOOGLE_GENAI_USE_VERTEXAI=FALSE
+
+# Required if using Vertex AI
+# GOOGLE_CLOUD_PROJECT=your-project-id
+# GOOGLE_CLOUD_LOCATION=us-central1
