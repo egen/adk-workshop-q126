@@ -30,8 +30,8 @@ from google.adk.agents import Agent
 # root_agent = None  # Replace this with your Agent definition
 
 root_agent = Agent(
-    name="Simple_research_agent",
-    model="gemini-3-pro-preview",
+    name="simple_research_agent",
+    model="gemini-2.0-flash",
     instruction="""
     You are a helpful research assistant. Your goal is to help user's find information and answer questions.
 
