@@ -42,5 +42,9 @@ root_agent =  Agent(
 )
 
 tools = [
-    google_search_tool.GoogleSearchTool()
+        tools=[
+        AgentTool(agent=researcher),
+        AgentTool(agent=fact_checker),
+        AgentTool(agent=critic),
+    ],
 ]
