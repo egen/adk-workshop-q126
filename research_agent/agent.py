@@ -10,6 +10,7 @@ Current Exercise: 1 (Simple Single Agent)
 """
 
 from google.adk.agents import Agent
+from google.adk.tools import google_search
 
 # Exercise 1: Create a simple research agent
 # TODO: Define your root_agent here
@@ -27,4 +28,15 @@ from google.adk.agents import Agent
 #     description="...",
 # )
 
-root_agent = None  # Replace this with your Agent definition
+root_agent = Agent(
+    name="research_agent",
+    model="gemini-2.0-flash",
+    instruction=(
+        "You are a research assistant. Your task is to help answer questions "
+        "by finding relevant information and providing concise summaries. "
+        "You have access to a Google Search tool to find information on the web. "
+        "Always provide clear and concise answers based on the information you find."
+    ),
+    description="A simple research agent that can answer questions by finding and summarizing information.",
+    tools=[google_search]
+)
