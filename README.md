@@ -4,12 +4,12 @@ Build AI agents with Google's Agent Development Kit! In this workshop, you'll pr
 
 ## Workshop Overview
 
-| Exercise | Description | Skills Learned |
-|----------|-------------|----------------|
-| **Exercise 1** | Simple Single Agent | ADK basics, Agent class, deployment |
-| **Exercise 2** | Agent with Tools | Custom function tools, web scraping |
-| **Exercise 3** | Multi-Agent Research Team | AgentTool pattern, orchestration, sub-agents |
-| **Exercise 4** | Agent Evaluation | Eval framework, rubric-based metrics, prompt engineering |
+| Exercise       | Description               | Skills Learned                                           |
+| -------------- | ------------------------- | -------------------------------------------------------- |
+| **Exercise 1** | Simple Single Agent       | ADK basics, Agent class, deployment                      |
+| **Exercise 2** | Agent with Tools          | Custom function tools, web scraping                      |
+| **Exercise 3** | Multi-Agent Research Team | AgentTool pattern, orchestration, sub-agents             |
+| **Exercise 4** | Agent Evaluation          | Eval framework, rubric-based metrics, prompt engineering |
 
 ## Prerequisites
 
@@ -69,6 +69,7 @@ https://<your-name>-adk-workshop-773815123342.us-central1.run.app
 ```
 
 For example, branch `workshop/sam-gallagher` deploys to:
+
 ```
 https://sam-gallagher-adk-workshop-773815123342.us-central1.run.app
 ```
@@ -118,13 +119,23 @@ See [solutions/exercise_4/INSTRUCTIONS.md](solutions/exercise_4/INSTRUCTIONS.md)
 
 ## Troubleshooting
 
-| Issue | Solution |
-|-------|----------|
-| Agent returns `None` | Ensure `root_agent` is defined (not `None`) in `agent.py` |
-| Tools not working | Check that tool functions have proper docstrings and type hints |
-| Deployment fails | Check GitHub Actions logs; ensure branch matches `workshop/*` |
-| API key errors | Verify `GOOGLE_API_KEY` is set in `.env` |
+| Issue                | Solution                                                        |
+| -------------------- | --------------------------------------------------------------- |
+| Agent returns `None` | Ensure `root_agent` is defined (not `None`) in `agent.py`       |
+| Tools not working    | Check that tool functions have proper docstrings and type hints |
+| Deployment fails     | Check GitHub Actions logs; ensure branch matches `workshop/*`   |
+| API key errors       | Verify `GOOGLE_API_KEY` is set in `.env`                        |
 
 ## Need Help?
 
 Ask your workshop facilitator or check the `solutions/` folder for reference implementations.
+
+---
+
+Notes:
+
+https://aistudio.google.com/api-keys
+
+Cloud Run URL: https://<your-name>-adk-workshop-773815123342.us-central1.run.app
+
+uv init; uv sync; overlay use .venv/bin/activate.nu
