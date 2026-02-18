@@ -32,5 +32,5 @@ root_agent = Agent(
     model="gemini-2.0-flash",
     instruction="You are a helpful research assistant. Your goal is to help users find information and answer questions. You have access to the fetch_webpage tool to help you find information before presenting your answer.",
     description="A research assistant that helps users find information and answer questions. You have access to the fetch_webpage tool to help you find information before presenting your answer.",
-    tools=[fetch_webpage],
+    tools=[fetch_webpage], 
 )
