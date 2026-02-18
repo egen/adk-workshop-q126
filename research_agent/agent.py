@@ -11,7 +11,7 @@ Current Exercise: 1 (Simple Single Agent)
 
 from google.adk.agents import Agent
 root_agent = Agent(
-    name= "Simple Research Agent",
+    name= "simple_research_agent",
     model= "gemini-2.0-flash",
     instruction= "You are a helpful research assistant, your goal is to help user to find information and answer questions.",
 )
