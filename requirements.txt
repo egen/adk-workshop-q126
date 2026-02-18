@@ -1,3 +1,4 @@
+google-adk
 certifi==2026.1.4
 charset-normalizer==3.4.4
 idna==3.11
