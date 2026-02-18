@@ -11,6 +11,7 @@ Current Exercise: 1 (Simple Single Agent)
 
 from google.adk.agents import Agent
 from google.adk.tools import google_search_tool
+from .tools import fetch_webpage
 
 root_agent = Agent(
     name = "Extensive_Research_Agent",
@@ -24,5 +25,7 @@ root_agent = Agent(
     """,
     description = "An agent that can answer questions based on its training data and reasoning.",
 
-    tools=[google_search_tool.GoogleSearchTool()],
+    tools=[
+        google_search_tool.GoogleSearchTool(), 
+           fetch_webpage],
 )
