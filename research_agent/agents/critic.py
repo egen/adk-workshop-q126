@@ -1,9 +1,5 @@
 """
 Critic Agent - Challenges research findings and identifies gaps.
-
-Invoked as an AgentTool by the orchestrator. A pure LLM agent (no tools)
-that reviews the research and fact-check results to identify weaknesses,
-biases, missing perspectives, and areas needing further investigation.
 """
 
 from google.adk.agents import Agent

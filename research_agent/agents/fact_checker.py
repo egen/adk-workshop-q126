@@ -1,9 +1,5 @@
 """
 Fact Checker Agent - Independently verifies claims from the research.
-
-Invoked as an AgentTool by the orchestrator. Uses Google Search to
-run independent verification searches on key claims, confirming or
-contradicting the initial research findings.
 """
 
 from google.adk.agents import Agent
