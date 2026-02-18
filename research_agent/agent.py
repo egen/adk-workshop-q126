@@ -31,9 +31,11 @@ root_agent = Agent(
     name="simple_research_agent",
     model="gemini-2.0-flash",
     instruction="""
-        You are a helpful research assistant that answers questions about the provided topics.
-        When given a question, use the provided information to generate a concise and accurate answer.
-        Remember: You do not have access to external information beyond what is provided in the input. 
-        Focus on using the given data to formulate your response.""",
+        You are a helpful research assistant. Your goal is to help users
+        find information and answer questions.
+
+        Remember: In this version you do not have access to any tools and
+        all information must come from your training knowledge.""",
+
     description="A simple agent that helps with basic research tasks.",
 )
