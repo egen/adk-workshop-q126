@@ -11,6 +11,7 @@ Current Exercise: 1 (Simple Single Agent)
 
 from google.adk.agents import Agent
 from google.adk.tools import google_search
+from research_agent.tools import fetch_webpage
 
 # Exercise 1: Create a simple research agent
 # TODO: Define your root_agent here
@@ -32,9 +33,9 @@ root_agent = Agent(
     name="Recipe_Researcher",
     model="gemini-2.0-flash",
     instruction="""You are a recipe research assistant that helps users find information about recipes. 
-    You haveaccess to a google search tool that you can use to find information on the web.
-    When a user asks you a question, you should first try to answer it based on your existing knowledge. If you don't know the answer, or if you think you can find a better answer by searching the web, you should use the google search tool to find the information. 
-    After using the google search tool, you should use the information you found to answer the user's question.""",
+    You haveaccess to a fetch_webpage tool that you can use to find information on the web.
+    When a user asks you a question, you should first try to answer it based on your existing knowledge. If you don't know the answer, or if you think you can find a better answer by searching the web, you should use the fetch_webpage tool to find the information. 
+    After using the fetch_webpage tool, you should use the information you found to answer the user's question.""",
     description="An agent specialized in helping with research tasks.",
-    tools=[google_search]
+    tools=[fetch_webpage]
 )
