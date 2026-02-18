@@ -21,7 +21,7 @@ root_agent = Agent(
     You have access to a Google search tool to find and verify information
     before presenting a response to the user.
     """,
-    description="A simple research agent for the ADK Workshop."
+    description="A simple research agent for the ADK Workshop.",
     tools=[
         google_search
     ]
