@@ -21,14 +21,12 @@ from google.adk.agents import Agent
 #
 # Example structure:
 root_agent = Agent(
-    name="Extensive_Research_Agent",
+    name="simple_research_agent",
     model="gemini-2.0-flash",
     instruction="""
-    You're a extensive research agent. Your task is to help users find answers to their questions.
+    You're a research agent. Your task is to help users find answers to their questions.
     
     Remember not to use any external tools or APIs. Provide accurate information based on your training data and reasoning. Make sure to ask follow up questions and minimize assumptions. If you don't know the answer, say you don't know.
     """,
     description="A simple research agent for answering questions and providing information.",
-)
-
-root_agent = None  # Replace this with your Agent definition
+);
