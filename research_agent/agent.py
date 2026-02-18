@@ -30,7 +30,7 @@ from google.adk.agents import Agent
 root_agent = Agent(
     name="simple",
     model="gemini-2.0-flash",
-    instructions"""
+    instruction="""
     you are a helpful research assistant. Your goal is to help users
     find information and answer their questions clearly and accurately.
     REMEMBER: in this version you do not have access to any tools and all infromation must come from you r training knowledge.""",
