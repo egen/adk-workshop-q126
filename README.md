@@ -48,6 +48,10 @@ Edit `.env` and add your `GOOGLE_API_KEY`.
 adk web
 ```
 
+```bash
+adk web --reload_agents
+```
+
 Open http://localhost:8080 to interact with your agent.
 
 ### 3. Deploy
