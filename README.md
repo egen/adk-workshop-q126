@@ -54,8 +54,8 @@ Open http://localhost:8080 to interact with your agent.
 
 ```bash
 git add .
-git commit -m "My research agent"
-git push -u origin workshop/<your-name>
+git commit -m "verify access"
+git push -u origin workshop/lahari-uvaraj
 ```
 
 Your agent will automatically deploy to Cloud Run.
