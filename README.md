@@ -6,7 +6,7 @@ Build AI agents with Google's Agent Development Kit! In this workshop, you'll pr
 
 | Exercise | Description | Skills Learned |
 |----------|-------------|----------------|
-| **Exercise 1** | Simple Single Agent | ADK basics, Agent class, deployment 
+| **Exercise 1** | Simple Single Agent | ADK basics, Agent class, deployment |
 | **Exercise 2** | Agent with Tools | Custom function tools, web scraping |
 | **Exercise 3** | Multi-Agent Research Team | AgentTool pattern, orchestration, sub-agents |
 | **Exercise 4** | Agent Evaluation | Eval framework, rubric-based metrics, prompt engineering |
