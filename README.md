@@ -1,3 +1,6 @@
+# Name
+Riju Sharma Pakhala
+
 # Google Agent Development Kit (ADK) Workshop
 
 Build AI agents with Google's Agent Development Kit! In this workshop, you'll progressively build a Research Agent, starting from a simple single agent and evolving to a multi-agent hierarchical system.
