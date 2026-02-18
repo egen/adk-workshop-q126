@@ -27,4 +27,9 @@ from google.adk.agents import Agent
 #     description="...",
 # )
 
-root_agent = None  # Replace this with your Agent definition
+root_agent = NAgent(
+    name="Simple Reseach Agent",
+    model="gemini-2.0-flash",
+    instruction="Give me a positive impression",
+    description="My fist Agent", # Replace this with your Agent definition
+)
