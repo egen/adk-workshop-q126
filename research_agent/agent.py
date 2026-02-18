@@ -20,11 +20,11 @@ from google.adk.agents import Agent
 # - The model should be "gemini-2.0-flash" for fast responses
 #
 # Example structure:
-# root_agent = Agent(
-#     name="...",
-#     model="...",
-#     instruction="...",
-#     description="...",
-# )
+root_agent = Agent(
+    name="research_agent",
+    model="gemini-2.0-flash",
+    instruction="You are a research agent that helps users find information.",
+    description="An agent specialized in conducting research and providing insights.",
+)
 
 root_agent = None  # Replace this with your Agent definition
