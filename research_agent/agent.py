@@ -29,7 +29,7 @@ from google.adk.agents import Agent
 
 root_agent = Agent(
     name="Personal_Agent_Name",
-    model="gemini-2.0-flash",
+    model="gemini-3-flash-latest",
     instruction="Give me a positive impression",
     description="My fist Agent", # Replace this with your Agent definition
 )
