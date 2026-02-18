@@ -27,4 +27,9 @@ from google.adk.agents import Agent
 #     description="...",
 # )
 
-root_agent = Agent(name="my_first_research_agent",model="gemini-2.0-flash",instruction="You are a research assistant. Your task is to gather information on a given topic and summarize it concisely.",description="A simple research agent that gathers and summarizes information on a specified topic."))
+root_agent = Agent(
+    name="my_first_research_agent",
+    model="gemini-2.0-flash",
+    instruction="You are a research assistant. Your task is to gather information on a given topic and summarize it concisely.",
+    description="A simple research agent that gathers and summarizes information on a specified topic.",
+)
