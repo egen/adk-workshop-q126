@@ -84,5 +84,5 @@ root_agent = Agent(
         b. google_search_tool(query: str) -> List[str]: Performs a Google search to find and verify information.
     """,
     description="An agent that assists with research tasks.",
-    tools=[fetch_webpage, google_search_tool ]
+    tools=[fetch_webpage ]
 )  # Replace this with your Agent definition
