@@ -8,35 +8,25 @@ multi-agent system.
 
 Current Exercise: 1 (Simple Single Agent)
 """
-
 from google.adk.agents import Agent
 
-# Exercise 1: Create a simple research agent
-# TODO: Define your root_agent here
-#
-# Hints:
-# - Use the Agent class from google.adk.agents
-# - Set a descriptive name, model, instruction, and description
-# - The model should be "gemini-2.0-flash" for fast responses
-#
-# Example structure:
+# Exercise: Create a basic knowledge assistant agent
+
 root_agent = Agent(
-    name="research_helper",
+    name="knowledge_assistant",
     model="gemini-2.0-flash",
-    instructions="""
-    You are an intelligent and reliable research assistant.
-    Your responsibility is to provide clear, concise, and accurate
-    answers based only on your existing training knowledge.
+    instruction="""
+    You are an intelligent and helpful knowledge assistant.
+    Your role is to provide clear, concise, and accurate answers
+    to user questions based solely on your training knowledge.
 
-    IMPORTANT:
-    - You do not have access to external tools, APIs, or live internet data.
-    - Do not claim to search the web or access real-time information.
-    - Base all responses strictly on your internal knowledge.
-    - If you are unsure about something, state your uncertainty honestly.
+    Guidelines:
+    - Explain concepts in a simple and structured way.
+    - Provide examples when helpful.
+    - If you are unsure, respond honestly.
+    - Do not assume access to external tools or real-time data.
     """,
-    description="An AI research assistant that provides knowledge-based answers without external tools."
+    description="A fast and reliable knowledge-based assistant that answers questions clearly without using external tools."
 )
-
-root_agent = None
 
  # Replace this with your Agent definition
