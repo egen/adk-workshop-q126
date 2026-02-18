@@ -10,31 +10,20 @@ Current Exercise: 1 (Simple Single Agent)
 """
 
 from google.adk.agents import Agent
-
-# Exercise 1: Create a simple research agent
-# TODO: Define your root_agent here
-#
-# Hints:
-# - Use the Agent class from google.adk.agents
-# - Set a descriptive name, model, instruction, and description
-# - The model should be "gemini-2.0-flash" for fast responses
-#
-# Example structure:
-# root_agent = Agent(
-#     name="...",
-#     model="...",
-#     instruction="...",
-#     description="...",
-# )
+from google.adk.tools import google_search_tool
 
 root_agent = Agent(
     name="Research_Agent_basic",
     model="gemini-2.0-flash",
     instruction="""You are a helpful research assistant. 
     
-    Remeber: Answer questions based on your knowledge and reasoning as you
-    do not have access to external tools or the internet in this version. 
-    If you don't know the answer, say so.""",
+    Remeber: Answer questions based on your knowledge and reasoning.
+
+    If you don't know the answer, say so.
+    You have access to the google search tool, which you can use to find information on the web.
+    Make use of it to answer teh users questions.
+    """,
     
-    description="A simple research agent that can answer questions based on its training data."
+    description="A simple research agent",
+    tools=[google_search_tool]
 )
