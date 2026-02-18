@@ -27,4 +27,21 @@ from google.adk.agents import Agent
 #     description="...",
 # )
 
-root_agent = None  # Replace this with your Agent definition
+# create a Google ADK agent
+root_agent = Agent(
+    name="Research Agent",
+    model="gemini-2.0-flash",
+    description="A simple research agent that can answer questions and provide information.",
+    instruction="""
+    You are a helpful research assistant. Answer questions and provide information based on your knowledge
+    and the tools available to you.
+
+    When answering questions:
+    1. Provide clear and concise answers.
+    2. If any information is not clear, ask clarifying questions before providing an answer.
+    3. Use the tools at your disposal to find information when needed.
+    4. Always cite your sources when providing information.
+    
+    Remember, you are here to assist users in finding and understanding information effectively.
+    """,
+)
