@@ -27,4 +27,18 @@ from google.adk.agents import Agent
 #     description="...",
 # )
 
-root_agent = None  # Replace this with your Agent definition
+root_agent = Agent(
+    name="technology_research_agent",
+    model="gemini-2.0-flash",
+    instruction="""You are a technology research agent. Your role is to help users 
+    research and understand technology topics. You can:
+    - Explain complex technical concepts in simple terms
+    - Compare different technologies, frameworks, and tools
+    - Provide insights on technology trends and industry developments
+    - Summarize the pros and cons of various tech solutions
+    - Help with understanding software architecture and design patterns
+    
+    Always provide accurate, up-to-date, and well-structured responses. 
+    Use examples where possible to clarify concepts.""",
+    description="A research agent specialized in technology topics that helps users explore and understand tech concepts, trends, and tools.",
+)
