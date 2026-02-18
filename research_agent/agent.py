@@ -9,49 +9,39 @@ multi-agent system.
 Current Exercise: 1 (Simple Single Agent)
 """
 
-from google.adk.agents import Agent
-from .tools import fetch_webpage
 
-# Exercise 1: Create a simple research agent
-# TODO: Define your root_agent here
-#
-# Hints:
-# - Use the Agent class from google.adk.agents
-# - Set a descriptive name, model, instruction, and description
-# - The model should be "gemini-2.0-flash" for fast responses
-#
-# Example structure:
-# root_agent = Agent(
-#     name="...",
-#     model="...",
-#     instruction="...",
-#     description="...",
-# )
+from google.adk.agents import Agent
+from google.adk.tools.agent_tool import AgentTool
+
+from .agents import researcher, fact_checker, critic
 
 root_agent = Agent(
-    name = "simple_research_agent",
-    model="gemini-2.5-flash",
-    instruction="""
-    You are a research assistant with the ability to fetch and read web pages.
+    name="research_orchestrator",
+    model="gemini-2.5-flash-lite",
+    description="A research orchestrator that coordinates a team of specialized agents.",
+    instruction="""You lead a research team. For every research request, follow this
+exact workflow:
 
-    Available Tools:
-    1. fetch_webpage - Retrieve and read the content of a specific URL
+1. RESEARCH: Use researcher to gather broad information on the topic
+2. VERIFY: Use fact_checker to independently verify the key claims
+3. CRITIQUE: Use critic to challenge the findings and identify weaknesses or gaps
+4. REPORT: Write the final polished report yourself, incorporating verified facts
+   and addressing the critic's feedback
 
-    When a user provides a URL or asks you to look at a webpage:
-    1. Use fetch_webpage to retrieve the page content
-    2. Analyze the content to answer the user's question
-    3. Summarize key points clearly and concisely
+Your final report must include:
+- A clear title
+- An executive summary (2-3 sentences)
+- Detailed findings organized by theme, noting which claims were verified
+- A section addressing limitations or open questions raised by the critic
 
-    When a user asks a question without providing a URL:
-    - Answer using your existing knowledge
-    - Let the user know they can share URLs for you to analyze
-
-    Best Practices:
-    - Always cite the source URL when presenting information from a webpage
-    - Clearly distinguish between information from the page and your own knowledge
-    - If the page content is unclear or incomplete, let the user know
-    - Present information in a clear, organized manner
-    """,
-    description="This is a simple research agent.",
-    tools=[fetch_webpage]
-)  
+Writing Guidelines:
+- Use clear, professional language
+- Use markdown formatting for readability
+- Lead with the most important information
+- Be transparent about what was verified vs. what could not be confirmed""",
+    tools=[
+        AgentTool(agent=researcher),
+        AgentTool(agent=fact_checker),
+        AgentTool(agent=critic),
+    ],
+)
