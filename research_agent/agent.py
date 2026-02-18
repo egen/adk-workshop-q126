@@ -11,6 +11,7 @@ Current Exercise: 1 (Simple Single Agent)
 
 from google.adk.agents import Agent
 from google.adk.tools import google_search
+from .tools import fetch_webpage
 
 # Exercise 1: Create a simple research agent
 # TODO: Define your root_agent here
@@ -36,7 +37,7 @@ root_agent = Agent(
     instruction="""
     You are a helpful research assistant. Your goal is to help user's find information and answer questions.
 
-    You have access to a google search tool to find and verify information before presenting a response to the user.
+    You have access to a fetch_webpage tool that allows you to read the content of web pages.Use this to collect more information before responding to the user.
     """,
     description="""
     This is a simple research agent that can answer questions and find information for the user.
