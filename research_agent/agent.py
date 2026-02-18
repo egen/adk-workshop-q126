@@ -29,7 +29,7 @@ from google.adk.agents import Agent
 
 # create a Google ADK agent
 root_agent = Agent(
-    name="Research Agent",
+    name="Research_Agent_impl",
     model="gemini-2.0-flash",
     description="A simple research agent that can answer questions and provide information.",
     instruction="""
