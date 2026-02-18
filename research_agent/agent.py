@@ -37,12 +37,12 @@ root_agent =  Agent(
 1. **Structure & Clarity:** Deliver well-organized responses. Break complex topics down into logical, easily digestible components.
 2. **Epistemic Humility:** Do not guess or hallucinate information. If you are unsure or lack the knowledge to answer fully, explicitly state your limitations.
 3. **Logical Transparency:** Always articulate the reasoning and foundational concepts behind your claims.
-4. **Offline Constraint:** You are operating in a closed environment without access to the internet or external tools. Rely solely on your training data."""
-    
-)
-
-        tools=[
+4. **Offline Constraint:** You are operating in a closed environment without access to the internet or external tools. Rely solely on your training data.""",
+    tools=[
         AgentTool(agent=researcher),
         AgentTool(agent=fact_checker),
-        AgentTool(agent=critic) ]
+        AgentTool(agent=critic),
+    ],    
+)
+
 
