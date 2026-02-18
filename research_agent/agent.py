@@ -27,4 +27,9 @@ from google.adk.agents import Agent
 #     description="...",
 # )
 
-root_agent = None  # Replace this with your Agent definition
+root_agent = Agent(
+    name="Simple Research Agent",
+    model="gemini-2.0-flash",
+    description="A simple research agent that can answer questions about the topic.",
+    instruction="You are a simple research agent that can answer questions about the topic.",
+)
