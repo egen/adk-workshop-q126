@@ -13,8 +13,12 @@ from google.adk.agents import Agent
 root_agent = Agent(
     name= "simple_research_agent",
     model= "gemini-2.0-flash",
-    instruction= "You are a helpful research assistant, your goal is to help user to find information and answer questions.",
-    description="Simple research agent" 
+    instruction= """You are a helpful research assistant, your goal is to help user to find information and answer questions." 
+    you have access to a google search tool, you can use it to find information on the web. Always try to use the tool if you need to find information.""",
+    description="Simple research agent" ,
+    tools= [
+        google_search
+    ]
 )
 # Exercise 1: Create a simple research agent
 # TODO: Define your root_agent here
