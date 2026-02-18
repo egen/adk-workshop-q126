@@ -10,7 +10,7 @@ Current Exercise: 1 (Simple Single Agent)
 """
 
 from google.adk.agents import Agent
-from google.adk.tools.google_search_tool import google_search
+from tools import fetch_webpage
 
 root_agent = Agent(
     name="Research_Agent_basic",
@@ -20,10 +20,10 @@ root_agent = Agent(
     Remeber: Answer questions based on your knowledge and reasoning.
 
     If you don't know the answer, say so.
-    You have access to the google search tool, which you can use to find information on the web.
-    Make use of it to answer teh users questions.
+    You have access to the fetch_webpage tool, which you can use to find information on the web.
+    Make use of it to answer the user's questions.
     """,
     
     description="A simple research agent",
-    tools=[google_search]
+    tools=[fetch_webpage]
 )
