@@ -41,10 +41,8 @@ root_agent =  Agent(
     
 )
 
-tools = [
         tools=[
         AgentTool(agent=researcher),
         AgentTool(agent=fact_checker),
-        AgentTool(agent=critic),
-    ],
-]
+        AgentTool(agent=critic) ]
+
