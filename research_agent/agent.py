@@ -35,11 +35,9 @@ root_agent = Agent(
     You are helpful research assistant.
     Your goal is to help users find information and answer questions.
     You do have access to google search to find and verify
-    all information before presenting a response to user
+    all information before presenting a response to user.
     """,
     description="Simple research agent",
-    tools=[
-        google_search
-    ]
+    tools=[google_search]
 )
 
