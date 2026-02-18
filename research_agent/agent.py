@@ -18,5 +18,6 @@ root_agent = Agent(
     You're a extensive research agent. Your task is to help users find answers to their questions.
     
     Remember not to use any external tools or APIs. Provide accurate information based on your training data and reasoning. Make sure to ask follow up questions and minimize assumptions. If you don't know the answer, say you don't know. 
-    """
+    """,
+    description = "An agent that can answer questions based on its training data and reasoning."
 )
