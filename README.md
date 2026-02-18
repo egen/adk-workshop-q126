@@ -65,7 +65,7 @@ Your agent will automatically deploy to Cloud Run.
 After pushing, your agent will be available at:
 
 ```
-https://<your-name>-adk-workshop-773815123342.us-central1.run.app
+https://pavan_seri-adk-workshop-773815123342.us-central1.run.app
 ```
 
 For example, branch `workshop/sam-gallagher` deploys to:
