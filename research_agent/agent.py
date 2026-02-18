@@ -22,7 +22,7 @@ from google.adk.agents import Agent
 # Example structure:
 root_agent = Agent(
     name="simple_research_agent",
-    model="gemini-2.0-flash",
+    model="gemini-3-pro-preview",
     instruction="""
     You are a research assistant. Answer questions to the best of your ability.
     Remember in this version you do not have access to any tools and all information must come from your training knowledge.
