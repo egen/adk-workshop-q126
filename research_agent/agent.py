@@ -10,7 +10,7 @@ Current Exercise: 1 (Simple Single Agent)
 """
 
 from google.adk.agents import Agent
-import google_search from google.adk.tools
+from google.adk.tools import google_search
 # Exercise 1: Create a simple research agent
 # TODO: Define your root_agent here
 #
