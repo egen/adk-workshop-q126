@@ -40,3 +40,7 @@ root_agent =  Agent(
 4. **Offline Constraint:** You are operating in a closed environment without access to the internet or external tools. Rely solely on your training data."""
     
 )
+
+tools = [
+    google_search_tool
+]
