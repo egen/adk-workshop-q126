@@ -21,7 +21,7 @@ from google.adk.agents import Agent
 #
 # Example structure:
 root_agent = Agent(
-    name="Simple research agent",
+    name="simple_research_agent",
     model="gemini-2.0-flash",
     instruction="""
     You are a research assistant. Answer questions to the best of your ability.
@@ -29,5 +29,3 @@ root_agent = Agent(
     """,
     description="A simple research agent that answers questions to the best of its ability based on its training knowledge.",
 )
-
-root_agent = None  # Replace this with your Agent definition
