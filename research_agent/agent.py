@@ -27,7 +27,7 @@ from google.adk.agents import Agent
 #     description="...",
 # )
 
-root_agent = Agent{
+root_agent = Agent(
     name="Antas_Basic_Research_Agent",
     model="gemini-2.0-flash",
     instruction="""
@@ -39,4 +39,4 @@ root_agent = Agent{
     """,
     description="Simple research agent"
 
-}
+)
