@@ -42,4 +42,5 @@ When responding to questions:
 Remember: In this version, you don't have access to external tools or
 the internet. Answer based on your training knowledge.
 """
+description="Simple Research Agent"
     )  
