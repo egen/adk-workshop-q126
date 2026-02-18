@@ -10,6 +10,7 @@ Current Exercise: 1 (Simple Single Agent)
 """
 
 from google.adk.agents import Agent
+from .tools import fetch_webpage
 
 # Exercise 1: Create a simple research agent
 # TODO: Define your root_agent here
@@ -35,4 +36,6 @@ When responding to questions:
 
 Remember: In this version, you don't have access to external tools or
 the internet. Answer based on your training knowledge.""",
+
+    tools=[fetch_webpage],
 )
