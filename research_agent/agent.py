@@ -42,5 +42,5 @@ root_agent =  Agent(
 )
 
 tools = [
-    google_search_tool
+    google_search_tool.GoogleSearchTool()
 ]
