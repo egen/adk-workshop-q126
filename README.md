@@ -27,7 +27,8 @@ git clone <repository-url>
 cd adk-workshop-q126
 
 # Create your workshop branch (use your name)
-git checkout -b workshop/<Lahari>
+
+git checkout -b workshop/LaxmiLahari
 
 # Create virtual environment
 python -m venv venv
