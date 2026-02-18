@@ -28,7 +28,7 @@ from google.adk.agents import Agent
 # )
 
 root_agent = Agent(
-    name="Simple Reseach Agent",
+    name="Personal Ahent A",
     model="gemini-2.0-flash",
     instruction="Give me a positive impression",
     description="My fist Agent", # Replace this with your Agent definition
