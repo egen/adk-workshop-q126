@@ -8,9 +8,10 @@ demonstrating how to extend an agent's capabilities with function tools.
 from google.adk.agents import Agent
 
 from .tools import fetch_webpage
+from google.adk.tools import google_search
 
 root_agent = Agent(
-    name="research_agent",
+    name="research_agent-2",
     model="gemini-2.0-flash",
     description="A research assistant that can fetch and read web pages to help answer questions.",
     instruction="""You are a research assistant with the ability to fetch and read web pages.
@@ -32,5 +33,5 @@ Best Practices:
 - Clearly distinguish between information from the page and your own knowledge
 - If the page content is unclear or incomplete, let the user know
 - Present information in a clear, organized manner""",
-    tools=[fetch_webpage],
+    tools=[google_search],
 )
