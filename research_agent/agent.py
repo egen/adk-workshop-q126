@@ -28,7 +28,7 @@ from google.adk.agents import Agent
 # )
 
 root_agent = Agent(
-    name="Playground Agent",
+    name="Playground_Agent",
     model:"gemini-2.0-flash",
     instruction""
     You are a research agent
