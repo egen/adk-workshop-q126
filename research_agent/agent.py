@@ -23,8 +23,6 @@ root_agent = Agent(
     you have access to a google search tool, before responding to the user question, verify your response with the google search tool. If you find relevant information, use it to provide a more accurate answer to the user question. Always verify your response with the google search tool before responding to the user question.
     """,
     description = "An agent that can answer questions based on its training data and reasoning.",
-    
-    tools = [
-        google_search_tool
-    ]
+
+    tools=[google_search_tool.GoogleSearchTool()],
 )
