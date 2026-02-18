@@ -8,7 +8,7 @@ multi-agent system.
 
 Current Exercise: 1 (Simple Single Agent)
 """
-
+from google.adk.tools import google_search
 from google.adk.agents import Agent
 
 # Exercise 1: Create a simple research agent
@@ -25,6 +25,7 @@ root_agent = Agent(
     model="gemini-2.0-flash",
     instruction="You are a research assistant, your goal is to help answer questions",
     description="research agent",
+    tools = [google_search]
 )
 
 # root_agent = None  # Replace this with your Agent definition
