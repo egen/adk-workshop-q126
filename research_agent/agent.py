@@ -6,7 +6,7 @@ Follow the instructions in the README to progressively build
 your Research Agent from a simple single agent to a full
 multi-agent system.
 
-Current Exercise: 1 (Simple Single Agent)
+Current Exercise: 1 (Simple Single Agent)   
 """
 
 from google.adk.agents import Agent
