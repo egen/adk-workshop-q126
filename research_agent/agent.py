@@ -26,6 +26,7 @@ from google.adk.agents import Agent
 #     instruction="...",
 #     description="...",
 # )
+
 root_agent = Agent(
     name="simple",
     model="gemini-2.0-flash",
