@@ -10,7 +10,7 @@ Current Exercise: 1 (Simple Single Agent)
 """
 
 from google.adk.agents import Agent
-from google.adk.tools import google_search_tool
+from google.adk.tools import google_search
 
 # Exercise 1: Create a simple researc
 root_agent = Agent(
@@ -22,5 +22,5 @@ root_agent = Agent(
     you have access to google search tool to find and verify information before presneting it to the user.
     """
     description="A simple research agent for the ADK Workshop."
-    tools=[google_search_tool]
+    tools=[google_search]
 )
