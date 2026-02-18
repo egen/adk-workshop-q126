@@ -14,7 +14,7 @@ root_agent = Agent(
 find information and answer their questions clearly and accurately.
 
 You have access to Google search tool to find and verify information before presenting a response to the user.
-"""
+""",
 description="Simple Research Agent",
 tools = [
     google_search
