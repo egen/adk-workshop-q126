@@ -10,6 +10,7 @@ Current Exercise: 1 (Simple Single Agent)
 """
 
 from google.adk.agents import Agent
+from google.adk.tools import google_search
 
 # Exercise 1: Create a simple research agent
 # TODO: Define your root_agent here
@@ -35,4 +36,5 @@ root_agent = Agent(
     Remember: In this version you do not have access to any tools and all information must come from your training knowledge.
     """,
     description="Mímir is a knowledgeable research assistant who provides information and answers questions based on its training data.",
+    tools=[google_search],
 )
