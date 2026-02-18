@@ -9,24 +9,23 @@ multi-agent system.
 Current Exercise: 1 (Simple Single Agent)
 """
 from google.adk.agents import Agent
-
-# Exercise: Create a basic knowledge assistant agent
+from google.adk.tools import google_search
 
 root_agent = Agent(
-    name="knowledge_assistant",
+    name="research_agent_with_search",
     model="gemini-2.0-flash",
     instruction="""
-    You are an intelligent and helpful knowledge assistant.
-    Your role is to provide clear, concise, and accurate answers
-    to user questions based solely on your training knowledge.
+    You are a research assistant with access to Google Search.
 
     Guidelines:
-    - Explain concepts in a simple and structured way.
-    - Provide examples when helpful.
-    - If you are unsure, respond honestly.
-    - Do not assume access to external tools or real-time data.
+    - Always use the google_search tool for current events or factual queries.
+    - Summarize the information clearly.
+    - Cite sources when possible.
+    - Do not make up information.
     """,
-    description="A fast and reliable knowledge-based assistant that answers questions clearly without using external tools."
+    description="A research assistant that uses Google Search to provide accurate and up-to-date answers.",
+    tools=[google_search]   
 )
+
 
  # Replace this with your Agent definition
