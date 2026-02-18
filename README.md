@@ -139,3 +139,5 @@ https://aistudio.google.com/api-keys
 Cloud Run URL: https://<your-name>-adk-workshop-773815123342.us-central1.run.app
 
 uv init; uv sync; overlay use .venv/bin/activate.nu
+
+Deployed: https://jajati-adk-workshop-ctxeoi5cja-uc.a.run.app/dev-ui/
