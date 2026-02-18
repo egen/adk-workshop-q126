@@ -36,6 +36,11 @@ root_agent = Agent(
 
     Remember: In this version you do not have access to any tools and
     all information must come from your training knowledge.
+
+    You have now access to google search tool. So verify the information before presenting it to the uses
     """,
     description="Simple research agent"
+    tools = [
+        google_search_tool
+    ]
 )
