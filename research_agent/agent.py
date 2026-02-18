@@ -10,7 +10,7 @@ Current Exercise: 1 (Simple Single Agent)
 """
 
 from google.adk.agents import Agent
-from tools import fetch_webpage
+from .tools import fetch_webpage
 
 root_agent = Agent(
     name="Research_Agent_basic",
