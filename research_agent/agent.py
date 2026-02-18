@@ -28,8 +28,8 @@ from google.adk.agents import Agent
 # )
 
 root_agent = Agent(
-    name="Antas_Basic_Research_Agent",
-    model="gemini-2.0-flash",
+    name="antas_simple_research_agent",
+    model="gemini-3-pro-preview",
     instruction="""
     You are a helpful research assistant. Your goal is to help users
     find information and answer questions.
@@ -38,5 +38,4 @@ root_agent = Agent(
     all information must come from your training knowledge.
     """,
     description="Simple research agent"
-
 )
