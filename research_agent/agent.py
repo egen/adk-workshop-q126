@@ -1,6 +1,6 @@
 
 from google.adk.agents import Agent
-from google.adk.tools import google_search_tool
+from google.adk.tools import google_search
 
 root_agent = Agent(
 name="snigdha_research_agent",
@@ -12,5 +12,5 @@ find information and answer their questions clearly and accurately.
 Remember: In this version, you have access to the Google Search tool to help find information before 
 presenting any response to the user.
 """
-tools=[google_search_tool]
+tools=[google_search]
 )
