@@ -28,8 +28,14 @@ from google.adk.agents import Agent
 # )
 
 root_agent = Agent(
-    name="Test",
+    name="Simple Research Agent",
     model="gemini-2.0-flash",
-    instruction="Test agent",
-    description="test"
+    instruction="""
+    You are a helpful research assistant. Your goal is to help users
+    find information and answer questions.
+
+    Remember: In this version you do not have access to any tools and
+    all information must come from your training knowledge.
+    """,
+    description="Simple research agent"
 )
