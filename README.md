@@ -27,7 +27,7 @@ git clone <repository-url>
 cd adk-workshop-q126
 
 # Create your workshop branch (use your name)
-git checkout -b workshop/<your-name>
+git checkout -b workshop/raghavendrabhupana
 
 # Create virtual environment
 python -m venv venv
@@ -55,7 +55,7 @@ Open http://localhost:8080 to interact with your agent.
 ```bash
 git add .
 git commit -m "My research agent"
-git push -u origin workshop/<your-name>
+git push -u origin workshop/raghavendrabhupana
 ```
 
 Your agent will automatically deploy to Cloud Run.
@@ -65,7 +65,7 @@ Your agent will automatically deploy to Cloud Run.
 After pushing, your agent will be available at:
 
 ```
-https://<your-name>-adk-workshop-773815123342.us-central1.run.app
+https://raghavendrabhupana-adk-workshop-773815123342.us-central1.run.app
 ```
 
 For example, branch `workshop/sam-gallagher` deploys to:
