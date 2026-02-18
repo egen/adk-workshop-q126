@@ -10,8 +10,8 @@ Current Exercise: 1 (Simple Single Agent)
 """
 
 from google.adk.agents import Agent
-# from google.adk.tools import google_search -exercise-2
-from .tools import fetch_webpage
+# from google.adk.tools import google_search //exercise-2
+from .tools import fetch_webpage # ex-2.1
 
 # Exercise 1: Create a simple research agent
 # TODO: Define your root_agent here
@@ -32,7 +32,7 @@ from .tools import fetch_webpage
     # ex-2->Remember: In this version you do not have access to any tools and
     # all information must come from your training knowledge.
     # """,
-    # You have access to a fetch_webpage tool, use this to collect
+    # ex-2.1->You have access to a fetch_webpage tool, use this to collect
     # more information about the topic before responding to the user.
 root_agent = Agent(
     name="basic_research_agent_tool",
@@ -45,10 +45,11 @@ root_agent = Agent(
     more information about the topic before responding to the user.
     """,
     description="Simple research agent",
-    # tools=[              //exercise-2
-    # google_search
-    # ]
     tools=[
         fetch_webpage
     ]
+    # tools=[              //exercise-2
+    # google_search
+    # ]
+  
 )  # Replace this with your Agent definition
