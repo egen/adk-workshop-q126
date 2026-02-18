@@ -11,6 +11,9 @@ Current Exercise: 1 (Simple Single Agent)
 
 from google.adk.agents import Agent
 from google.adk.tools import google_search
+from google.adk.tools.agent_tool import AgentTool
+
+from .agents import researcher, fact_checker, critic
 
 # Exercise 1: Create a simple research agent
 # TODO: Define your root_agent here
@@ -29,14 +32,28 @@ from google.adk.tools import google_search
 # )
 
 root_agent = Agent(
-    name="research_agent",
+    name="research_orchestrator",
     model="gemini-2.0-flash",
+    description="A research orchestrator that coordinates a team of specialized agents.",
     instruction=(
-        "You are a research assistant. Your task is to help answer questions "
-        "by finding relevant information and providing concise summaries. "
-        "You have access to a Google Search tool to find information on the web. "
-        "Always provide clear and concise answers based on the information you find."
+        "You are a research orchestrator responsible for coordinating a team of "
+        "specialized agents to answer complex questions.\n"
+        "Your team consists of:\n"
+        "1. Researcher Agent: Conducts in-depth research using various tools and resources.\n"
+        "2. Fact Checker Agent: Verifies the accuracy and reliability of information "
+        "gathered by the Researcher Agent.\n"
+        "3. Critic Agent: Evaluates the quality and relevance of the information and "
+        "provides feedback to improve the research process.\n"
+        "Your task is to delegate tasks to the appropriate agents, synthesize their "
+        "findings, and ensure that the final output is accurate, comprehensive, and "
+        "well-structured. Use the tools at your disposal to facilitate communication "
+        "and collaboration among the agents, and to access external information when "
+        "necessary. Always strive for clarity, accuracy, and depth in your research outputs."
     ),
-    description="A simple research agent that can answer questions by finding and summarizing information.",
-    tools=[google_search]
+    tools=[
+        AgentTool(agent=researcher),
+        AgentTool(agent=fact_checker),
+        AgentTool(agent=critic),
+    ],
+    max_turns=3,   # Limit the number of turns to prevent infinite loops during testing
 )
