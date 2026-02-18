@@ -27,4 +27,4 @@ root_agent = Agent(
     description="An agent specialized in conducting research and providing insights.",
 )
 
-root_agent = None  # Replace this with your Agent definition
+root_agent = root_agent  # Replace this with your Agent definition
