@@ -10,7 +10,7 @@ Current Exercise: 1 (Simple Single Agent)
 """
 
 from google.adk.agents import Agent
-from google.adk.tools import google_search_tool
+from google.adk.tools.google_search_tool import google_search
 
 root_agent = Agent(
     name="Research_Agent_basic",
@@ -25,5 +25,5 @@ root_agent = Agent(
     """,
     
     description="A simple research agent",
-    tools=[google_search_tool]
+    tools=[google_search]
 )
