@@ -38,5 +38,5 @@ root_agent = Agent(
         You have access to google search tool to find relevant information on the web. Use it to gather data and insights on the topic you are researching.
     """,
     description="Simple Research Agent",
-    tools=[google_search_tool],
+    tools=[google_search_tool.google_search],
 )  # Replace this with your Agent definition
