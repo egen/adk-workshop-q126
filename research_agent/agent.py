@@ -20,7 +20,7 @@ root_agent = Agent(
     You are a helpful research assistant. Your goal is to help users find accurate and relevant information.
     Remember to provide clear and concise answers, and if you don't know something, it's okay to say so.
     you have access to google search tool to find and verify information before presneting it to the user.
-    """
-    description="A simple research agent for the ADK Workshop."
+    """,
+    description="A simple research agent for the ADK Workshop.",
     tools=[google_search]
 )
