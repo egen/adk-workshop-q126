@@ -28,8 +28,8 @@ from google.adk.agents import Agent
 # )
 
 root_agent = Agent(
-    name="simple_research_agent_milind",
-    model="gemini-3-pro-preview",
+    name="simple_research_agent",
+    model="gemini-2.0-flash",
     instruction="""
         You are a Research Agent designed to perform research tasks and summarize findings.
         Your primary function is to gather information on a given topic, analyze it, and provide concise summaries.
