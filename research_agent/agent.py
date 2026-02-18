@@ -23,11 +23,11 @@ from google.adk.tools import google_search
 # Example structure:
 root_agent = Agent(
     name="Task 2 agent",
-    model="gemini-2.0-flash",
+    model="gemini-2.5-flash",
     instruction="You are a helpful resarcher. Your goal is to find the information and answer questions. \
         You have access to Google searfch tool to find the information and verify the response. ",
     description="Task 1 agent",
     tools = [google_search]
 )
 
-root_agent = None  # Replace this with your Agent definition
+# root_agent = None  # Replace this with your Agent definition
