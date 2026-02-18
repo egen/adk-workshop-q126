@@ -10,7 +10,7 @@ Current Exercise: 1 (Simple Single Agent)
 """
 
 from google.adk.agents import Agent
-from google.adk.tools import google_search_tool  # Importing the Google Search tool from the ADK tools module
+from google.adk.tools import google_search  # Importing the Google Search tool from the ADK tools module
 
 root_agent = Agent(
     name="simple_research_agent",
@@ -22,6 +22,6 @@ root_agent = Agent(
     to find information on the internet.""",
     description="A simple research agent",
     tools=[
-        google_search_tool,  # This tool is defined in tools.py and allows the agent to perform web searches
+        google_search,  # This tool is defined in tools.py and allows the agent to perform web searches
     ]
 )
