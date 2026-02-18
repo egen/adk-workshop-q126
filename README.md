@@ -22,7 +22,7 @@ Build AI agents with Google's Agent Development Kit! In this workshop, you'll pr
 ### 1. Clone and Setup
 
 ```bash
-# Clone the repository
+# Clone the repositorys
 git clone <repository-url>
 cd adk-workshop-q126
 
