@@ -38,5 +38,5 @@ root_agent = Agent(
         You have access to fetch_webpage tool to find relevant information on the web. Use it to gather data and insights on the topic you are researching.
     """,
     description="Simple Research Agent",
-    tools=["fetch_webpage"]  
+    tools=[fetch_webpage]  
 )  # Replace this with your Agent definition
