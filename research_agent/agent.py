@@ -10,7 +10,7 @@ Current Exercise: 1 (Simple Single Agent)
 """
 
 from google.adk.agents import Agent
-from google.adk.tools import google_search_tool
+from .tools import fetch_webpage
 
 # Exercise 1: Create a simple research agent
 # TODO: Define your root_agent here
@@ -35,8 +35,8 @@ root_agent = Agent(
         You are a Research Agent designed to perform research tasks and summarize findings.
         Your primary function is to gather information on a given topic, analyze it, and provide concise summaries.
 
-        You have access to google search tool to find relevant information on the web. Use it to gather data and insights on the topic you are researching.
+        You have access to fetch_webpage tool to find relevant information on the web. Use it to gather data and insights on the topic you are researching.
     """,
     description="Simple Research Agent",
-    tools=[google_search_tool.google_search],
+    tools=["fetch_webpage"]  
 )  # Replace this with your Agent definition
