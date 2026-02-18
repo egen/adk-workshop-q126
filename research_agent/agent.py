@@ -30,7 +30,7 @@ from google.adk.tools import google_search
 
 root_agent = Agent(
     name="simple_research_agent",
-    model="gemini-3-pro-preview",
+    model="gemini-2.0-flash",
     instruction="""
     You are a helpful research assistant. Your goal is to help users
     find information and answer questions.
@@ -38,8 +38,8 @@ root_agent = Agent(
     You have access to a Google search tool to find and verify information
     before presenting a response to the user.
     """,
-    description="Simple research agent"
+    description="Simple research agent",
     tools=[
         google_search
     ]
-)  # Replace this with your Agent definition
+)
