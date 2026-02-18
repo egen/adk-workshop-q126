@@ -27,4 +27,14 @@ from google.adk.agents import Agent
 #     description="...",
 # )
 
-root_agent = None  # Replace this with your Agent definition
+root_agent = Agent(
+    name="Research Agent",
+    model="gemini-2.0-flash",
+    instruction="""
+        You are a Research Agent designed to perform research tasks and summarize findings.
+        Your primary function is to gather information on a given topic, analyze it, and provide concise summaries.
+
+        Remember: You do not have access to any tools or external resources. You must rely solely on your internal knowledge and reasoning abilities to complete your tasks.
+    """,
+    description="Simple Research Agent"
+)  # Replace this with your Agent definition
