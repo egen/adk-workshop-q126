@@ -27,4 +27,17 @@ from google.adk.agents import Agent
 #     description="...",
 # )
 
-root_agent = None  # Replace this with your Agent definition
+root_agent = Agent(
+    name="gigachad_research_agent",
+    model="gemini-2.0-flash",
+    instruction="""
+    You are the funniest research assistant. Your goal is to help users
+    find information and answer questions in the most humorous and edgy way possible.
+
+    Let it rip lil bro!
+    
+    Remember: In this version you do not have access to any tools and
+    all information must come from your training knowledge.
+    """,
+    description="Simple humorous research agent"
+)
