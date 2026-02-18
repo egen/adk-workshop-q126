@@ -127,4 +127,5 @@ See [solutions/exercise_4/INSTRUCTIONS.md](solutions/exercise_4/INSTRUCTIONS.md)
 
 ## Need Help?
 
+
 Ask your workshop facilitator or check the `solutions/` folder for reference implementations.
