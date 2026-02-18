@@ -42,6 +42,6 @@ root_agent = Agent(
     """,
     description="Simple research agent"
     tools = [
-        google_search_tool
+        google_search
     ]
 )
