@@ -10,6 +10,7 @@ Current Exercise: 1 (Simple Single Agent)
 """
 
 from google.adk.agents import Agent
+from google.adk.tools import google_search
 
 # Exercise 1: Create a simple research agent
 # TODO: Define your root_agent here
@@ -35,9 +36,10 @@ root_agent = Agent(
     instruction="""
     You are a helpful research assistant. Your goal is to help user's find information and answer questions.
 
-    Remember: Do not use any tools or external resources. Just use your knowledge to answer the user's questions.
+    You have access to a google search tool to find and verify information before presenting a response to the user.
     """,
     description="""
     This is a simple research agent that can answer questions and find information for the user.
     """,
+    tools=[google_search]
 )
