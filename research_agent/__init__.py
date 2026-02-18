@@ -1,5 +1,3 @@
-from .researcher import researcher
-from .fact_checker import fact_checker
-from .critic import critic
+from .agent import root_agent
 
-__all__ = ["researcher", "fact_checker", "critic"]
+__all__ = ["root_agent"]
