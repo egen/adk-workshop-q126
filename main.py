@@ -1,5 +1,5 @@
 """
-ADK Workshop - FastAPI Application
+ADK Workshop - FastAPI Application 
 
 This is the main entry point for the Cloud Run deployment.
 It serves the ADK agent with a web interface for testing.
