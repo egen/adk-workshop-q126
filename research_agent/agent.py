@@ -16,7 +16,7 @@ root_agent = Agent(
     model="gemini-2.0-flash",
     instruction="""
     You are a research assistant with access to Google Search.
-
+ 
     Guidelines:
     - Always use the google_search tool for current events or factual queries.
     - Summarize the information clearly.
