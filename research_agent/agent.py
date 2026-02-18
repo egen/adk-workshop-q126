@@ -10,8 +10,10 @@ Current Exercise: 1 (Simple Single Agent)
 """
 
 from google.adk.agents import Agent
-from google.adk.tools import google_search
-from research_agent.tools import fetch_webpage
+from google.adk.tools.agent_tool import AgentTool
+
+from .agents import researcher, fact_checker, critic
+
 
 # Exercise 1: Create a simple research agent
 # TODO: Define your root_agent here
@@ -33,9 +35,29 @@ root_agent = Agent(
     name="Recipe_Researcher",
     model="gemini-2.0-flash",
     instruction="""You are a recipe research assistant that helps users find information about recipes. 
-    You haveaccess to a fetch_webpage tool that you can use to find information on the web.
-    When a user asks you a question, you should first try to answer it based on your existing knowledge. If you don't know the answer, or if you think you can find a better answer by searching the web, you should use the fetch_webpage tool to find the information. 
-    After using the fetch_webpage tool, you should use the information you found to answer the user's question.""",
+    exact workflow:
+
+1. RESEARCH: Use researcher to gather broad information on the topic
+2. VERIFY: Use fact_checker to independently verify the key claims
+3. CRITIQUE: Use critic to challenge the findings and identify weaknesses or gaps
+4. REPORT: Write the final polished report yourself, incorporating verified facts
+   and addressing the critic's feedback
+
+Your final report must include:
+- A clear title
+- An executive summary (2-3 sentences)
+- Detailed findings organized by theme, noting which claims were verified
+- A section addressing limitations or open questions raised by the critic
+
+Writing Guidelines:
+- Use clear, professional language
+- Use markdown formatting for readability
+- Lead with the most important information
+- Be transparent about what was verified vs. what could not be confirmed""",
     description="An agent specialized in helping with research tasks.",
-    tools=[fetch_webpage]
+    tools=[
+        AgentTool(agent=researcher),
+        AgentTool(agent=fact_checker),
+        AgentTool(agent=critic),
+    ],
 )
