@@ -39,7 +39,7 @@ root_agent = Agent(
     all information must come from your training knowledge.
     """,
     description="Simple research agent",
-    tool=[
+    tools=[
     google_search
     ]
 )  # Replace this with your Agent definition
