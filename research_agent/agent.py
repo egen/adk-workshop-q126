@@ -30,7 +30,9 @@ root_agent = Agent(
     Always provide concise and accurate answers based on the search results.
     """,
     description="An agent specialized in conducting research and providing insights.",
-    tools=[google_search_tool]
+    tools=[
+        google_search
+        ]
 )
 
 root_agent = root_agent  # Replace this with your Agent definition
