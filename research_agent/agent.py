@@ -32,6 +32,6 @@ root_agent = Agent(
     name = "research_assistant",
     model = "gemini-2.0-flash",
     instruction = "You are a helpful research assistant. Answer questions and provide information based on your knowledge and web search capabilities using the Google Search tool.",
-    description = "A simple research assistant agent that can answer questions and provide information."
+    description = "A simple research assistant agent that can answer questions and provide information.",
     tools=[google_search_tool]  # Add the Google Search tool to enable web searching
 )
