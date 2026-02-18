@@ -1,8 +1,5 @@
 """
 Researcher Agent - Performs broad web research on a given topic.
-
-Invoked as an AgentTool by the orchestrator. Uses Google Search to
-gather information and returns a comprehensive summary of findings.
 """
 
 from google.adk.agents import Agent
