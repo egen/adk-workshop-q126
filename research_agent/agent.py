@@ -12,6 +12,7 @@ Current Exercise: 1 (Simple Single Agent)
 from google.adk.agents import Agent
 
 from google.adk.tools import google_search
+from .tools import fetch_webpage
 
 root_agent = Agent(
     name="research_agent",
@@ -20,5 +21,5 @@ root_agent = Agent(
     your goal is to helpful research assistant. your goal is to help users
     find information and answer the questions.
     """,
-    tools=[google_search]
+    tools=[fetch_webpage]
     )
