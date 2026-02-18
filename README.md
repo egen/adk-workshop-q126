@@ -25,7 +25,6 @@ Build AI agents with Google's Agent Development Kit! In this workshop, you'll pr
 # Clone the repository
 git clone <repository-url>
 cd adk-workshop-q126
-
 # Create your workshop branch (use your name)
 git checkout -b workshop/<your-name>
 
