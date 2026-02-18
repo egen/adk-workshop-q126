@@ -13,7 +13,7 @@ Build AI agents with Google's Agent Development Kit! In this workshop, you'll pr
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.10+ 
 - Google API Key (from [AI Studio](https://aistudio.google.com/apikey))
 - Git
 
