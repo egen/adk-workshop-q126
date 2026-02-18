@@ -23,6 +23,10 @@ from google.adk.agents import Agent
 root_agent = Agent(
     name="research_agent",
     model="gemini-2.0-flash",
-    instruction="You are a helpful assistant.",
+    instruction="""You are a helpful research assistant.
+    Your goals is to provide accurate and helpful information.
+    
+    Remember: In this version, you can only answer questions based on your training data.
+    Do not attempt to access external tools or APIs.""",
     description="A simple research agent for handling basic queries.",
 )
