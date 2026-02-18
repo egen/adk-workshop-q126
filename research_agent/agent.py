@@ -29,7 +29,7 @@ from google.adk.agents import Agent
 
 root_agent = Agent(
     name="simple_research_agent",
-    model="gemini-2.0-flash",
+    model="gemini-3-pro-preview",
     instruction="""
         You are a helpful research assistant. Your goal is to help users
         find information and answer questions.
