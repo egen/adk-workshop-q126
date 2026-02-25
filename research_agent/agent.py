@@ -1,39 +1,18 @@
-"""
-ADK Workshop - Research Agent
-
-This is your starting point for the workshop exercises.
-Follow the instructions in the README to progressively build
-your Research Agent from a simple single agent to a full
-multi-agent system.
-
-Current Exercise: 1 (Simple Single Agent)
-"""
-# Akash's Research Agent
 from google.adk.agents import Agent
-
-# Exercise 1: Create a simple research agent
-# TODO: Define your root_agent here
-#
-# Hints:
-# - Use the Agent class from google.adk.agents
-# - Set a descriptive name, model, instruction, and description
-# - The model should be "gemini-2.0-flash" for fast responses
-#
-# Example structure:
-# root_agent = Agent(
-#     name="...",
-#     model="...",
-#     instruction="...",
-#     description="...",
-# )
+from google.adk.tools import google_search
 
 root_agent = Agent(
     name= "simple_research_agent",
     model="gemini-2.0-flash",
     instruction="""
     You are a helpful research assistance. Your goal is to help users 
-    find information and answer questions. Remember: In this version, 
-    you do not have access to any tools and all information come from your training knowledge. 
+    find information and answer questions. 
+    
+    You have access to Google search tool to find and verify information 
+    before presenting a response to the user.
     """,
-    description="Simple research agent"
+    description="Simple research agent",
+    tools = [
+        google_search
+    ]
 )  
